@@ -1,0 +1,48 @@
+{
+	"name": "robyn",
+	"version": "1.1.2-1",
+	"author": "RED Interactive <geeks@ff0000.com>",
+	"description": "A highly customizable boilerplate to initialize common projects.",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ff0000/red-boilerplate.git",
+		"branch": "master"
+	},
+	"systemDependencies": {
+		"git": "*",
+		"grunt": ">=0.3.0"
+	},
+	"engines": {
+		"node": "*"
+	},
+	"installedPlugins": {},
+	"config": {
+		"vars": {
+			"PROJECT_NAME": "sampleProjectName",
+			"PROJECT_TITLE": "Sample Project Title"
+		},
+		"dirs": {
+			"robyn": ".robyn",
+			"tasks": "robyn/tasks",
+			"config": "robyn/config"
+		},
+		"requiredPaths": [
+			".robyn",
+			"node_modules"
+		],
+		"excludedPaths": [
+			".git",
+			".robyn",
+			"node_modules"
+		],
+		"ignoreTasks": [
+			"concat",
+			"init",
+			"lint",
+			"min",
+			"qunit",
+			"test"
+		]
+	},
+	"initialized": true
+}
